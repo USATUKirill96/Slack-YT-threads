@@ -24,3 +24,7 @@ slackyt-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+/.history
+/.elixir_ls
+/config/secret.ex
