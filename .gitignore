@@ -27,4 +27,4 @@ slackyt-*.tar
 
 /.history
 /.elixir_ls
-/config/secret.ex
+/config/secret.exs
