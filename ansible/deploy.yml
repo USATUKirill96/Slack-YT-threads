@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+     - name: Creating bot directory
+       file:
+        path: /home/owner/smena_bot
+        state: directory

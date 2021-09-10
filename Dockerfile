@@ -19,4 +19,3 @@ RUN mix local.hex --force
 RUN mix local.rebar --force
 RUN mix deps.get --only prod
 RUN mix deps.compile
-RUN mix run --no-halt
