@@ -13,5 +13,7 @@ import_config "../apps/*/config/config.exs"
 ## Logger
 config :logger, level: :debug
 
+config :slackyt, :youtrack, threads_field: "Threads"
+
 import_config "#{Mix.env()}.exs"
 import_config "secret.exs"
