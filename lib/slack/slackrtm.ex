@@ -14,6 +14,7 @@ defmodule Slackyt.Slack.Rtm do
       when is_binary(message.thread_ts) do
     if Message.for_me?(message, slack) do
       Message.parse_message(message)
+      |> IO.inspect(label: "Входящее сообщение")
       |> Slackyt.YouTrack.Adapter.update_threads()
     end
 
