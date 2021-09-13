@@ -28,4 +28,3 @@ slackyt-*.tar
 /.history
 /.elixir_ls
 /config/secret.exs
-/mix.lock
