@@ -24,7 +24,7 @@ defmodule Slackyt.YouTrack.Adapter do
     |> Enum.filter(fn field -> field["name"] == "Threads" end)
     |> List.first()
     # Добавить строку с новым тредом
-    |> then(fn field -> field["value"]["text"] <> "\n - " <> thread_url end)
+    |> then(fn field -> field["value"]["text"] || " " <> "\n - " <> thread_url end)
     |> update_custom_fields(message.task)
   end
 

@@ -1,21 +1,9 @@
 # Slackyt
 
-**TODO: Add description**
+[English version](docs/README_ENG.md)
 
-## Installation
+1. [О приложении](#about)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `slackyt` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:slackyt, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/slackyt](https://hexdocs.pm/slackyt).
+## О приложении <a id="about"></a>
 
