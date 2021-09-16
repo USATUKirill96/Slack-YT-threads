@@ -14,7 +14,7 @@ The purpose of application is to connect slack threads to youtrack issue
 
 ![Slack thread](slack-example-ru.png)
 
-Превращается в
+Is parsed to YouTrack as:
 
 ![Youtrack issue](yt-example-ru.png)
 
