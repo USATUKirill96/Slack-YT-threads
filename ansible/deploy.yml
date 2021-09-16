@@ -2,28 +2,28 @@
   tasks:
     - name: Creating bot directory
       file:
-        path: /home/owner/smena_bot
+        path: "/home/{{ user }}/{{ bot_dir }}"
         state: directory
 
     - name: Pulling repo
       ansible.builtin.git:
         repo: "https://github.com/USATUKirill96/Slack-YT-threads.git"
-        dest: /home/owner/smena_bot
+        dest: "/home/{{ user }}/{{ bot_dir }}"
         single_branch: yes
         version: master
 
     - name: Copying local config
       ansible.builtin.copy:
         src: ./../config/secret.exs
-        dest: /home/owner/smena_bot/config/secret.exs
+        dest: "/home/{{ user }}/{{ bot_dir }}/config/secret.exs"
 
     - name: Tear down existing services
       docker_compose:
-        project_src: /home/owner/smena_bot
+        project_src: "/home/{{ user }}/{{ bot_dir }}"
         state: absent
 
     - name: Create and start services
       docker_compose:
-        project_src: /home/owner/smena_bot
+        project_src: "/home/{{ user }}/{{ bot_dir }}"
         build: yes
       register: output
