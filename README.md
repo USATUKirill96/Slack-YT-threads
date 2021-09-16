@@ -26,6 +26,7 @@
 1. Создайте бота в своем рабочем окружении по [ссылке](https://my.slack.com/services/new/bot) и получите api token слака
 2. Получите api токен ютрека, руководство по [ссылке](https://www.jetbrains.com/help/youtrack/standalone/Manage-Permanent-Token.html)
 3. Создайте в директории config/ файл secret.exs, внесите в него информацию по примеру в config/secret.example.exs
+4. Заведите в карточке ютрека поле `Threads`, и дайте пользователю права на редактирование поля
 
 
 ## Запуск приложения на локальной машине <a id="local-run"></a>
