@@ -28,3 +28,6 @@ slackyt-*.tar
 /.history
 /.elixir_ls
 /config/secret.exs
+
+ansible/hosts.ini
+ansible/variables.yml
